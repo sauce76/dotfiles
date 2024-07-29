@@ -1,0 +1,100 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 30,
+
+  "modules-left": [
+    "hyprland/workspaces",
+    "clock",
+    "temperature",
+    "cpu"
+  ],
+
+  "modules-center": [
+    "wlr/taskbar"
+  ],
+
+  "modules-right": [
+    "pulseaudio",
+    "hyprland/language",
+    "tray",
+    "battery"
+  ],
+
+
+// setting up modules 
+
+  "hyprland/language": {
+      "format-en": "EN",
+      "format-ar": "AR"
+    },
+  "pulseaudio": {
+    "format": "{icon}    {volume}",
+    "format-muted": "󰝟",
+    "tooltip": true,
+    "tooltip-format": "{icon}     {desc} || {volume}  %",
+    "format-icons": {
+      "headphone": "󰋋",
+      "hands-free": "󰋋",
+      "headset": "󰋋",
+      "default": ["", "", ""],
+      },
+    "on-click": "pavucontrol",
+    },
+  "pulseaudio/slider": {
+      "min": 0,
+      "max": 100,
+      "orientation": "vertical"
+   },
+   "network": {
+    "format-wifi": "{signalStrength} % 󰖩",
+    "format-ethernet": "󰈁", 
+    "format-disconnected": "󰖪",
+    "on-click": "nm-applet",
+
+
+ 
+    },
+   "tray": {
+      "icon-size": 21,
+      "spacing": 10
+    },
+   
+   "clock": {
+    "format": "{:%I:%M %p}"
+    },
+    "temperature": {
+        "format": "{temperatureC}°C "
+    },
+
+    "cpu":{
+        "interval": 10,
+        "format": "{}% ",
+        "max-length": 10
+    },
+
+    "battery": {
+      "states": {
+          "good": 95,
+          "warning": 30,
+          "critical": 20
+      },
+      "format": "{icon} {capacity}%",
+      "format-charging": "󰂄 {capacity}%",
+      "format-plugged": "󰂄 {capacity}%",
+      "format-alt": "{time}  {icon}",
+      "format-icons": ["󰂎","󰁺","󰁻","󰁼","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂","󰁹"],
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+  }
