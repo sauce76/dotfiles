@@ -1,24 +1,26 @@
 {
   "layer": "top",
   "position": "top",
-  "height": 30,
+  "height": 35,
 
   "modules-left": [
     "hyprland/workspaces",
     "clock",
     "temperature",
-    "cpu"
+    "cpu",
+    "battery"
   ],
 
   "modules-center": [
-    "wlr/taskbar"
+    "wlr/taskbar",
   ],
 
   "modules-right": [
+    "custom/logout",
     "pulseaudio",
     "hyprland/language",
     "tray",
-    "battery"
+    "battery",
   ],
 
 
@@ -84,7 +86,24 @@
       "format-plugged": "󰂄 {capacity}%",
       "format-alt": "{time}  {icon}",
       "format-icons": ["󰂎","󰁺","󰁻","󰁼","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂","󰁹"],
-    }
+    },
+
+    "hyprland/workspaces": {
+      "active-only": false,
+      "format-icons": {
+        "urgent": "U",
+        "active": "A",
+        "default": "D",
+      }
+    },
+
+    "custom/logout": {
+        "format": "󰐥 {}",
+        // "on-click": "~/dotfiles/scripts/logout.sh",
+        "on-click": "wlogout",
+        "interval": 86400,
+      }
+}
 
 
 
