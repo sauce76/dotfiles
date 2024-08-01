@@ -1,0 +1,81 @@
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family:  Roboto;
+    font-size: 12px;
+}
+
+
+@import "/home/ibrahim/.cache/wal/colors-waybar.css"; 
+ 
+
+window#waybar {
+    background-color: alpha(@background,0.7);
+    color: @foreground;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+
+button {
+    border: none;
+    border-radius: 9;
+    background-color: transparent;
+
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+button:hover {
+    background: @color1;
+    box-shadow: inset 0 -3px @foreground;
+}
+
+/* you can set a style on hover for any module like this */
+#pulseaudio:hover {
+    background-color: transparent;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background-color: transparent;
+    color: @foreground;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 2px;
+
+}
+
+#workspaces button:hover {
+    background: @color1;
+    box-shadow: inset 0 -3px @foreground;
+}
+
+#workspaces button.active { 
+    background-color: transparent;
+    box-shadow: inset 0 -3px @foreground;
+    animation: ws_normal 20s ease-in-out 1;
+    transition: all 0.4s cubic-bezier(0.55,-0.68,.48,1.682);
+
+}
+
+#workspaces button.urgent {
+    background-color: @color13;
+    box-shadow: inset 0 3px @foreground
+}
+
+tooltip {
+    background: @background; 
+
+}
+
+#clock,
+#temperature,
+#cpu,
+#custom-power,
+#pulseaudio,
+#language,
+#tray,
+#batterty {
+    padding: 0 10px;
+    background: transparent;
+    color: @foreground;
+}

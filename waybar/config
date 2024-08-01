@@ -24,11 +24,21 @@
 
 
 // setting up modules 
-
   "hyprland/language": {
       "format-en": "EN",
       "format-ar": "AR"
     },
+  "wlr/taskbar": {
+    "icon-theme": "{Tela-circle-dracula}",
+    "icon-size": 22,
+    "on-click": "activate",
+    "on-click-middle": "close",
+    "tooltip": true,
+    "tooltip-format": "{name} \n {title} ", // add centering 
+
+
+    
+  },
   "pulseaudio": {
     "format": "{icon}    {volume}",
     "format-muted": "󰝟",
