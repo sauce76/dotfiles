@@ -1,7 +1,7 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family:  Roboto;
-    font-size: 12px;
+    font-size: 15.5px;
 }
 
 
@@ -26,7 +26,15 @@ button {
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
     background: @color1;
+    box-shadow: inset 0 3px @foreground;
+}
+
+button.active { 
+    background-color: transparent;
     box-shadow: inset 0 -3px @foreground;
+    animation: ws_normal 20s ease-in-out 1;
+    transition: all 0.4s cubic-bezier(0.55,-0.68,.48,1.682);
+
 }
 
 /* you can set a style on hover for any module like this */
@@ -46,7 +54,7 @@ button:hover {
 
 #workspaces button:hover {
     background: @color1;
-    box-shadow: inset 0 -3px @foreground;
+    box-shadow: inset 0 3px @foreground;
 }
 
 #workspaces button.active { 
@@ -70,7 +78,7 @@ tooltip {
 #clock,
 #temperature,
 #cpu,
-#custom-power,
+#custom-logout,
 #pulseaudio,
 #language,
 #tray,

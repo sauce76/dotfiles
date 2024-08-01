@@ -14,12 +14,12 @@
     "wlr/taskbar",
   ],
 
-  "modules-right": [
-    "custom/logout",
-    "pulseaudio",
-    "hyprland/language",
-    "tray",
-    "battery",
+  "modules-right": [ 
+      "tray",
+      "pulseaudio",
+      "hyprland/language",
+      "battery",
+      "custom/logout",
   ],
 
 
@@ -30,7 +30,7 @@
     },
   "wlr/taskbar": {
     "icon-theme": "{Tela-circle-dracula}",
-    "icon-size": 22,
+    "icon-size": 20,
     "on-click": "activate",
     "on-click-middle": "close",
     "tooltip": true,
@@ -41,7 +41,7 @@
   },
   "pulseaudio": {
     "format": "{icon}    {volume}",
-    "format-muted": "󰝟",
+    "format-muted": "",
     "tooltip": true,
     "tooltip-format": "{icon}     {desc} || {volume}  %",
     "format-icons": {
@@ -67,15 +67,16 @@
  
     },
    "tray": {
-      "icon-size": 21,
+      "icon-size": 20,
       "spacing": 10
     },
    
    "clock": {
-    "format": "{:%I:%M %p}"
+    "format": "{:%I:%M %p}",
     },
     "temperature": {
-        "format": "{temperatureC}°C "
+        "format": "{temperatureC}°C ",
+        "icon-size": 22
     },
 
     "cpu":{
@@ -95,6 +96,8 @@
       "format-plugged": "󰂄 {capacity}%",
       "format-alt": "{time}  {icon}",
       "format-icons": ["󰂎","󰁺","󰁻","󰁼","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂","󰁹"],
+      "tooltip": true,
+      "tooltip-format": "{capacity}% \n {timeTo} \n {power} watt"
     },
 
     "hyprland/workspaces": {
@@ -111,6 +114,9 @@
         // "on-click": "~/dotfiles/scripts/logout.sh",
         "on-click": "wlogout",
         "interval": 86400,
+        "tooltip": true,
+        "tooltip-format": "Power Options"
+
       }
 }
 
