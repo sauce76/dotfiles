@@ -55,6 +55,7 @@ button.active {
 #workspaces button:hover {
     background: @color1;
     box-shadow: inset 0 3px @foreground;
+    text-shadow: none;
 }
 
 #workspaces button.active { 
@@ -71,8 +72,12 @@ button.active {
 }
 
 tooltip {
-    background: @background; 
+    background: @background;
+    border-radius: 9px;
+}
 
+tooltip label {
+    color: @color9;
 }
 
 #clock,

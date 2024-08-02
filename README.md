@@ -11,17 +11,17 @@ To do:
 - [ ] Brightness script to set a min brightness.
 - [ ] Adding date, battery, and power buttons in hyprlock.
 - [x] Setting starship, waybar, wlogout, rofi, dunst, hyprlock,  and yazi. 
+- [ ] change wallpaper client to swww.
+- [ ] screenshot app/script.
 - [ ] Theming of: 
   - [x] waybar 
   - [x] rofi 
-  - [ ] dunst 
+  - [x] dunst, used [flaticon](https://www.flaticon.com/) to make icons for the notification.
+  - [ ] change nm-applet, and blueman-applet icons. (for dunst)
   - [ ] wlogout. 
   - [ ] yazi, should change with kitty using pywal. 
-  - [ ] change wallpaper client to swww.
   - [x] SDDM, used [sugar sugar dark](https://github.com/MarianArlt/sddm-sugar-dark) by [MarinaArit](https://github.com/MarianArlt) theme for now. Will modify it later. 
-  -[ ] Gtk app theming. 
+  - [ ] Gtk app theming. 
   - [ ] qt app theming. 
-  - [ ] np-applet, and blueman-applet icons. 
-  - [ ] screenshot app/script.
 
 
