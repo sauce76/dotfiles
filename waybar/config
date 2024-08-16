@@ -102,10 +102,9 @@
 
     "hyprland/workspaces": {
       "active-only": false,
-      "format-icons": {
-        "urgent": "U",
-        "active": "A",
-        "default": "D",
+      "all-outputs": true,
+      "presistent-workspaces": {
+        "*": 5
       }
     },
 
