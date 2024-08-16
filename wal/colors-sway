@@ -1,0 +1,21 @@
+set $wallpaper /home/ibrahim/dotfiles/media/wallpaper4.png
+
+set $background #0d0518
+set $foreground #ede0db
+
+set $color0 #0d0518
+set $color1 #7D7481
+set $color2 #A37385
+set $color3 #D55D92
+set $color4 #D86A98
+set $color5 #B5A4A0
+set $color6 #E0A1B0
+set $color7 #ede0db
+set $color8 #a59c99
+set $color9 #7D7481
+set $color10 #A37385
+set $color11 #D55D92
+set $color12 #D86A98
+set $color13 #B5A4A0
+set $color14 #E0A1B0
+set $color15 #ede0db

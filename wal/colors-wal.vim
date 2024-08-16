@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/ibrahim/dotfiles/media/wallpaper4.png"
+let background = "#0d0518"
+let foreground = "#ede0db"
+let cursor     = "#ede0db"
+
+" Colors
+let color0  = "#0d0518"
+let color1  = "#7D7481"
+let color2  = "#A37385"
+let color3  = "#D55D92"
+let color4  = "#D86A98"
+let color5  = "#B5A4A0"
+let color6  = "#E0A1B0"
+let color7  = "#ede0db"
+let color8  = "#a59c99"
+let color9  = "#7D7481"
+let color10 = "#A37385"
+let color11 = "#D55D92"
+let color12 = "#D86A98"
+let color13 = "#B5A4A0"
+let color14 = "#E0A1B0"
+let color15 = "#ede0db"
