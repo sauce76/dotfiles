@@ -60,7 +60,7 @@ mainbox {
 imagebox {
     padding:                     20px;
     background-color:            transparent;
-    background-image:            url("~/dotfiles/media/a_tree_with_pink_leaves.jpg", height);
+    background-image:            url("~/dotfiles/media/cropped.png", height);
     background-position:         center; /* Center the background image */
     orientation:                 vertical;
     children:                    [ "inputbar", "dummy", "mode-switcher" ];
