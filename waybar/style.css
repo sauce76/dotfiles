@@ -85,9 +85,11 @@ tooltip label {
 #temperature,
 #cpu,
 #custom-logout,
+#custom-launcher,
 #pulseaudio,
 #language,
 #tray,
+#keyboard-state,
 #batterty {
     padding: 0 10px;
     background: transparent;

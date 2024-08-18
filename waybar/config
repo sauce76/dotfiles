@@ -7,10 +7,10 @@
 
 
   "modules-left": [
+    "custom/launcher",
     "hyprland/workspaces",
     "clock",
-    "temperature",
-    "cpu"
+    "cpu",
   ],
 
   "modules-center": [
@@ -21,6 +21,7 @@
       "tray",
       "pulseaudio",
       "hyprland/language",
+      "keyboard-state",
       "battery",
       "custom/logout",
   ],
@@ -84,8 +85,9 @@
 
     "cpu":{
         "interval": 10,
-        "format": "{}% ",
-        "max-length": 10
+        "format": "{usage}% ",
+        "max-length": 10,
+        "on-click": "missioncenter",
     },
 
     "battery": {
@@ -111,26 +113,37 @@
       }
     },
 
+    "keyboard-state": {
+        "numlock": true,
+        "capslock": true,
+        "format": "{name} {icon}",
+        "format-icons": {
+            "locked": "",
+            "unlocked": ""
+        }
+    },
+    
     "custom/logout": {
         "format": "󰐥 {}",
         // "on-click": "~/dotfiles/scripts/logout.sh",
         "on-click": "wlogout",
-        "interval": 86400,
         "tooltip": true,
         "tooltip-format": "Power Options"
 
-      }
+    },
+
+    "custom/launcher": {
+        "format": "󰣇",
+        "on-click": "~/dotfiles/scripts/app_launcher.sh",
+        "tooltip": true,
+        "tooltip-format": "Open App Launcher",
+    },
+
+
+      
 }
 
 
 
 
 
-
-
-
-
-
-
-
-  }
