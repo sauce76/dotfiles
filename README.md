@@ -9,7 +9,7 @@ I hope you enjoy my journey.
 To do: 
 - [x] Setting windowsrule in `hyprland.conf`.
 - [x] Brightness script to set a min brightness.
-- [ ] Adding date, battery, and power buttons in hyprlock.
+- [ ] ~~Adding date~~, ~~battery~~, and power buttons in hyprlock.
 - [x] Setting starship, waybar, wlogout, rofi, dunst, hyprlock,  and yazi. 
 - [x] change wallpaper client to swww.
 - [ ] screenshot app/script.
